@@ -1,3 +1,0 @@
-../Core/Src/dht11.c:5:6:dht11Init	1
-../Core/Src/dht11.c:13:6:dht11GpioMode	3
-../Core/Src/dht11.c:42:9:dht11Read	18
