@@ -1,0 +1,58 @@
+/*
+ ============================================================================
+ Name        : test_stack.c
+ Author      : 123
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <stdbool.h>
+
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}
+
+
+#define MAX_STACK_SIZE
+
+typedef struct
+{
+	int data[MAX_STACK_SIZE];	// 스텍 사이즈 크기 배열
+	int top;					// 스텍 상단 / 배열은 0부터 시작
+};
+
+//스텍이 비어있는지 확인
+bool is_empty(stackType *s)
+{
+	return (s->top==-1);
+
+}
+
+//스택이 꽉 차있는지 확인
+bool is_full(stackType *s)
+{
+	return (s->top == MAX_STACK_SIZE);
+}
+
+void push(stackType *a, int data);
+
+int main(void)
+{
+	if(isfull(s))
+		{
+		printf("stack is full\n\r");
+		}
+	else
+	{
+		s->data[++(s->top)] = data;
+	}
+
+}
+
+

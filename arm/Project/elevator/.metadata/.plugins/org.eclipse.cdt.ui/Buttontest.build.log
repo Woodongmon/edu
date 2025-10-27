@@ -1,0 +1,19 @@
+17:06:18 **** Incremental Build of configuration Debug for project Buttontest ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Button.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Button.d" -MT"Core/Src/Button.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Button.o"
+arm-none-eabi-gcc "../Core/Src/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ap.d" -MT"Core/Src/ap.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ap.o"
+../Core/Src/ap.c: In function 'apMain':
+../Core/Src/ap.c:26:29: error: 'button_state' undeclared (first use in this function); did you mean 'Button_Get'?
+   26 |         Button_All_Process(*button_state, *button_on);
+      |                             ^~~~~~~~~~~~
+      |                             Button_Get
+../Core/Src/ap.c:26:29: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/ap.c:26:44: error: 'button_on' undeclared (first use in this function)
+   26 |         Button_All_Process(*button_state, *button_on);
+      |                                            ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/ap.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+17:06:18 Build Failed. 4 errors, 0 warnings. (took 194ms)
+

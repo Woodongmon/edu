@@ -1,0 +1,4 @@
+../Core/Src/motor.c:11:6:motor_up	1
+../Core/Src/motor.c:15:6:motor_dw	1
+../Core/Src/motor.c:19:6:motor_stop	1
+../Core/Src/motor.c:23:6:door_motor	1

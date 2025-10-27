@@ -8036,6 +8036,7 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.g
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+<<<<<<< HEAD
 !SESSION 2025-10-27 09:16:52.090 -----------------------------------------------
 eclipse.buildId=Version 1.19.0
 java.version=21.0.3
@@ -8564,3 +8565,5 @@ java.lang.Exception: The project description file (.project) for '10_ultrasonic'
 	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+=======
+>>>>>>> origin/main

@@ -1,0 +1,23 @@
+/*
+ * ap.h
+ *
+ *  Created on: Oct 20, 2025
+ *      Author: user21
+ */
+
+#ifndef INC_AP_H_
+#define INC_AP_H_
+
+
+#include "main.h"
+
+#include "pintest.h"
+#include "stepper1.h"
+#include "stepper2.h"
+
+void apInit();
+void apMain();
+
+
+
+#endif /* INC_AP_H_ */

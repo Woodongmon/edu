@@ -1,0 +1,28 @@
+16:49:15 **** Incremental Build of configuration Debug for project 02_Button_02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/button.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/button.d" -MT"Core/Src/button.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/button.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:14: warning: implicit declaration of function 'buttonGetPressed' [-Wimplicit-function-declaration]
+  101 |           if(buttonGetPressed(0))
+      |              ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:93:17: warning: unused variable 'lastButtonState' [-Wunused-variable]
+   93 |   GPIO_PinState lastButtonState = GPIO_PIN_SET;
+      |                 ^~~~~~~~~~~~~~~
+../Core/Src/main.c:92:12: warning: unused variable 'lastDebounceTime' [-Wunused-variable]
+   92 |   uint32_t lastDebounceTime = 0;
+      |            ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "02_Button_02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/02_Button_02/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_Button_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_Button_02.elf
+ 
+arm-none-eabi-size  02_Button_02.elf 
+arm-none-eabi-objdump -h -S 02_Button_02.elf  > "02_Button_02.list"
+   text	   data	    bss	    dec	    hex	filename
+   6304	     48	   1568	   7920	   1ef0	02_Button_02.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_Button_02.list
+ 
+
+16:49:15 Build Finished. 0 errors, 3 warnings. (took 231ms)
+

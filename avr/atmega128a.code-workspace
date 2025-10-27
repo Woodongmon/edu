@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "atmega128a"
+		}
+	],
+	"settings": {
+		"cmake.configureArgs": [
+			"-DAVR_TOOLCHAIN_DIR=/home/user21/avr-gcc",
+			"-DCMAKE_MAKE_PROGRAM=/usr/bin/make"
+		],
+		"cmake.generator": "Unix Makefiles",
+		"files.associations": {
+			"fnd.h": "c",
+			"fnd1.h": "c",
+			"uart0.h": "c",
+			"delay.h": "c"
+		}
+	}
+}

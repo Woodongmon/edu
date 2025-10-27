@@ -1,0 +1,12 @@
+2025-10-24 09:21:50,012 [INFO] MainUpdater:2872 - connection check result : 10
+2025-10-24 09:21:50,437 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2025-10-24 09:21:54,298 [INFO] DocFrame:73 - Open Documents window for MCU STM32F411RE
+2025-10-24 09:21:54,502 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 411383736 Bytes (825229312)
+2025-10-24 09:22:16,679 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 459095992 Bytes (825229312)
+2025-10-24 09:23:16,453 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 300629944 Bytes (825229312)
+2025-10-24 09:23:34,503 [INFO] DocFrame:73 - Open Documents window for MCU STM32F411RE
+2025-10-24 10:23:39,446 [INFO] WebAppUi:305 - Path where cad_preferences.json is located /home/user21/.stm32cubeide/
+2025-10-24 10:23:39,447 [INFO] WebAppUi:306 - Updating consent from JSON file
+2025-10-24 10:23:39,827 [INFO] WebApp:403 - JxBrowser engine has been closed 
+2025-10-24 10:23:39,827 [INFO] WebAppUi:504 - JxBrowser engine has been closed 
+2025-10-24 10:23:39,827 [INFO] WebAppUi:541 - Close the Jxbrowser engine manually

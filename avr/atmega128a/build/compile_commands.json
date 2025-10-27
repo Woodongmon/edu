@@ -1,0 +1,80 @@
+[
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/main.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/main.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/main.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/main.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/ap/ap.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/ap/ap.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/button.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/button.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/delay_ms.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/delay_ms.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/delay_ms.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/delay_ms.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/fnd.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/fnd.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/fnd.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/fnd.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/i2c.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/i2c.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/i2c.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/i2c.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/i2c_lcd.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/i2c_lcd.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/i2c_lcd.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/i2c_lcd.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/lcd_4bit.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/lcd_4bit.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/lcd_4bit.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/lcd_4bit.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/lcd_8bit.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/lcd_8bit.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/lcd_8bit.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/lcd_8bit.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/led.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/led.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/millis.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/millis.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/millis.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/millis.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/uart.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/uart.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/uart.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/uart.c.obj"
+},
+{
+  "directory": "/home/user21/workspace_dhw/avr/atmega128a/build",
+  "command": "/home/user21/avr-gcc/bin/avr-gcc -DF_CPU=16000000UL -I/home/user21/workspace_dhw/avr/atmega128a/src -I/home/user21/workspace_dhw/avr/atmega128a/src/ap -I/home/user21/workspace_dhw/avr/atmega128a/src/bsp -I/home/user21/workspace_dhw/avr/atmega128a/src/hw -I/home/user21/workspace_dhw/avr/atmega128a/src/common -I/home/user21/workspace_dhw/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -DF_CPU=16000000UL -Os -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj -c /home/user21/workspace_dhw/avr/atmega128a/src/driver/uart0_int.c",
+  "file": "/home/user21/workspace_dhw/avr/atmega128a/src/driver/uart0_int.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj"
+}
+]

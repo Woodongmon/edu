@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 09:17:43 **** Build of configuration Debug for project test_queue ****
 make all 
 Building file: ../src/test_queue.c
@@ -16,4 +17,11 @@ Finished building target: test_queue
  
 
 09:17:43 Build Finished. 0 errors, 1 warnings. (took 167ms)
+=======
+14:41:13 **** Incremental Build of configuration Debug for project test_queue ****
+make all 
+make: Nothing to be done for 'all'.
+
+14:41:13 Build Finished. 0 errors, 0 warnings. (took 82ms)
+>>>>>>> origin/main
 

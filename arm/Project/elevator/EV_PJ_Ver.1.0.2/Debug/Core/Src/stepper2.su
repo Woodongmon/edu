@@ -1,0 +1,7 @@
+../Core/Src/stepper2.c:26:6:stepMotor2	16	static
+../Core/Src/stepper2.c:36:6:rotateSteps2	24	static
+../Core/Src/stepper2.c:60:6:rotateDegrees2	24	static
+../Core/Src/stepper2.c:70:6:OPEN	8	static
+../Core/Src/stepper2.c:75:6:CLOSE	8	static
+../Core/Src/stepper2.c:80:6:LEFTRIGHTSTOP	8	static
+../Core/Src/stepper2.c:86:6:MOTOR2TEST	8	static
