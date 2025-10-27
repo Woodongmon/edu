@@ -1,0 +1,4 @@
+../Core/Src/State.c:13:6:IDLE_f	16	static
+../Core/Src/State.c:23:6:UP_f	16	static
+../Core/Src/State.c:38:6:DOWN_f	16	static
+../Core/Src/State.c:52:6:ARRIVE_f	16	static

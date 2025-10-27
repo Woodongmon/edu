@@ -1,0 +1,118 @@
+/*
+ ============================================================================
+ Name        : circular.c
+ Author      : 123
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define MAX_CIRCULAR_SIZE 8
+
+typedef struct
+{
+	int data[MAX_CIRCULAR_SIZE];	// 큐 사이즈 크기 배열
+	int head,tail;				// 큐 전방 / 후방
+}circular;
+
+
+void init_circular(circular *c)
+{
+	c->head= c->tail = 8;
+}
+
+bool is_empty(circular *c)
+{
+	return (c->head == c->tail);
+
+}
+
+//큐가 차있는지 확인
+int is_full(circular *c)
+{
+	return (c->tail == ((c->tail+1) % MAX_CIRCULAR_SIZE-1);
+}
+
+void enqueue(circular *c, int data)
+{
+	if(is_full(c))
+		{
+		printf("circular is full\n");
+		}
+	else
+	{
+		c->tail = (c->tail + 1) % MAX_CIRCULAR_SIZE
+		c->data[++(q->tail)] = data;
+	}
+}
+
+//큐 확인 후 삭제 연산
+
+int dequeue(circular *c)
+{
+	if (is_empty(c))
+	{
+		printf("circular is empty\n");
+		exit(1); //프로그램 종료 함수
+	}
+	c->head = (c->head+1)%MAX_CIRCULAR_SIZE;
+	int data = q->data[(q->head)];
+	return data;
+}
+
+
+void print_circular(circular *c)
+{
+	if(is_empty(c))
+	{
+		printf("Empty circular\n");
+	}
+	else
+	{
+		printf("circular:");
+		if(!is_empty(c))
+		{
+			int i=c->head;
+			do{
+				i=(i+1)%MAX_CIRCULAR_SIZE;
+				printf("%d|",c->data[i]);
+				if(i==c->tail)
+					break;
+			}while(i!=c->head);
+			printf("\n")
+		}
+		else
+		{
+	    printf("%d|", q->data[i]);
+		}
+	} printf("\n");
+}
+}
+
+int main(void)
+{
+	circular circular;
+
+	int item = 0;
+
+	init_circular(&circular);
+
+	circular(&circular,3);
+	print_circular(&circular);
+
+	circular(&circular,4);
+	print_circular(&circular);
+
+	circular(&circular,5);
+	print_circular(&circular);
+
+
+
+	return 0;
+}
+

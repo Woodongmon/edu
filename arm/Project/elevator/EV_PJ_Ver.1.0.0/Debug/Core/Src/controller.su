@@ -1,0 +1,4 @@
+../Core/Src/controller.c:17:6:UP	8	static
+../Core/Src/controller.c:22:6:DOWN	8	static
+../Core/Src/controller.c:27:6:STOP	8	static
+../Core/Src/controller.c:33:6:MOTORTEST	8	static

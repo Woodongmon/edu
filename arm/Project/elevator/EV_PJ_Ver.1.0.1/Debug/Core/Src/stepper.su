@@ -1,0 +1,7 @@
+../Core/Src/stepper.c:26:6:stepMotor	16	static
+../Core/Src/stepper.c:36:6:rotateSteps	24	static
+../Core/Src/stepper.c:62:6:rotateDegrees	24	static
+../Core/Src/stepper.c:69:6:UP	8	static
+../Core/Src/stepper.c:74:6:DOWN	8	static
+../Core/Src/stepper.c:79:6:STOP	8	static
+../Core/Src/stepper.c:85:6:MOTORTEST	8	static

@@ -1,0 +1,21 @@
+16:51:15 **** Incremental Build of configuration Debug for project 10_ultrasonic ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "10_ultrasonic.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/10_ultrasonic/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ultrasonic.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_ultrasonic.elf
+ 
+arm-none-eabi-size  10_ultrasonic.elf 
+arm-none-eabi-objdump -h -S 10_ultrasonic.elf  > "10_ultrasonic.list"
+   text	   data	    bss	    dec	    hex	filename
+  19804	    104	   2128	  22036	   5614	10_ultrasonic.elf
+Finished building: default.size.stdout
+ 
+Finished building: 10_ultrasonic.list
+ 
+16:51:18 **** Incremental Build of configuration Debug for project 10_ultrasonic ****
+make -j16 all 
+arm-none-eabi-size  10_ultrasonic.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19804	    104	   2128	  22036	   5614	10_ultrasonic.elf
+Finished building: default.size.stdout
+ 

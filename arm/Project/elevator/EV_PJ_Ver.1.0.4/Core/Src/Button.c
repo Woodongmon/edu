@@ -1,0 +1,57 @@
+#include "Button.h"
+
+Button E_Button[8] = {	// 포트 // 핀
+		{GPIOA,GPIO_PIN_5},//
+		{GPIOB,GPIO_PIN_9},//
+		{GPIOB,GPIO_PIN_8},
+		{GPIOC,GPIO_PIN_9},
+		{GPIOC,GPIO_PIN_8},//
+		{GPIOC,GPIO_PIN_6},//
+		{GPIOC,GPIO_PIN_5},//
+		{GPIOA,GPIO_PIN_12} //
+};
+
+
+bool Button_Get(uint8_t num){
+	static uint8_t Pre_State[8] = {1,1,1,1,1,1,1,1};	// 버튼 상태 초기 값 할당
+	static uint32_t Pre_Time[8]	= {0};		// 디바운스 시간 초기화
+
+
+	uint32_t Curr_Time = HAL_GetTick();		//  눌린시점의 틱 받기
+
+	bool Curr_State = HAL_GPIO_ReadPin(E_Button[num].Port, E_Button[num].Pin);
+
+	bool Ru = false;		// 리턴할 값 선언
+
+	if(Curr_State == But_ON){//읽은 값이 ON이면
+
+		if(Curr_Time - Pre_Time[num] > 50){	 // 디바운스 50 > 200 으로 수정
+			if(Pre_State[num] == But_OFF){	//기존 값이 OFF라면
+				Ru = true; // 반환값 변경
+			}
+			Pre_Time[num] = Curr_Time;
+			Pre_State[num] = But_ON;	// 눌렸다는걸 입력해둠
+		}
+	}
+
+	else{	// 안눌리면
+		Pre_State[num] = But_OFF;
+	}
+
+	return Ru;	// 최종 값 반환
+}
+//uint8_t B_ON_State[8] = {0,0,0,0,0,0,0,0}; 	// 버튼 < led on 상태
+												// 누르면 1 다시 누르면 0
+												// 실제 E/V 버튼 LED ON/OFF 상태 느낌이라 생각
+//uint8_t B_State[8] = {0,0,0,0,0,0,0,0};		// 버튼 초기화용 값
+//uint8_t B_EM_Flag = 0;						// EM_Flag 초기화 안함
+
+void Button_All_Process(uint8_t *button_state, uint8_t *button_on){
+	  for(uint8_t i = 0; i < 8; i++){		// SW 모든 값 읽기
+
+		  button_state[i] = Button_Get(i);	// 버튼 값 읽어오기
+		  if(button_state[i] == 1){			// 버튼이 눌리면 // 버튼 on 상태 반전
+		  		  	  button_on[i] = !button_on[i];
+		  	  	  }
+	  }
+}

@@ -1,0 +1,10 @@
+12:55:36 **** Incremental Build of configuration Debug for project EV_PJ_Ver.1.0.1 ****
+make -j16 all 
+arm-none-eabi-size  EV_PJ_Ver.1.0.1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9680	     12	   1796	  11488	   2ce0	EV_PJ_Ver.1.0.1.elf
+Finished building: default.size.stdout
+ 
+
+12:55:36 Build Finished. 0 errors, 0 warnings. (took 136ms)
+

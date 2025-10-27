@@ -1,0 +1,10 @@
+11:01:27 **** Incremental Build of configuration Debug for project stepper ****
+make -j16 all 
+arm-none-eabi-size  stepper.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9900	     12	   1796	  11708	   2dbc	stepper.elf
+Finished building: default.size.stdout
+ 
+
+11:01:27 Build Finished. 0 errors, 0 warnings. (took 82ms)
+

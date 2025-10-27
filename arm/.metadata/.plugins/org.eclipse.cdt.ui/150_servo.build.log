@@ -1,0 +1,10 @@
+12:15:45 **** Incremental Build of configuration Debug for project 150_servo ****
+make -j16 all 
+arm-none-eabi-size  150_servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10284	     12	   1644	  11940	   2ea4	150_servo.elf
+Finished building: default.size.stdout
+ 
+
+12:15:46 Build Finished. 0 errors, 0 warnings. (took 142ms)
+

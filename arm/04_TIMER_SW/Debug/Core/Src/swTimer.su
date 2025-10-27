@@ -1,0 +1,5 @@
+../Core/Src/swTimer.c:11:6:softTimer_ISR	16	static
+../Core/Src/swTimer.c:40:6:softTimer_Init	16	static
+../Core/Src/swTimer.c:55:6:softTimer_GetStatus	16	static
+../Core/Src/swTimer.c:68:6:softTimer_IsTimeOut	16	static
+../Core/Src/swTimer.c:81:6:softTimer_Reset	16	static

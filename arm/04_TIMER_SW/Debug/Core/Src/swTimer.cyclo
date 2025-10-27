@@ -1,0 +1,5 @@
+../Core/Src/swTimer.c:11:6:softTimer_ISR	4
+../Core/Src/swTimer.c:40:6:softTimer_Init	2
+../Core/Src/swTimer.c:55:6:softTimer_GetStatus	2
+../Core/Src/swTimer.c:68:6:softTimer_IsTimeOut	2
+../Core/Src/swTimer.c:81:6:softTimer_Reset	2

@@ -1,0 +1,114 @@
+/*
+ ============================================================================
+ Name        : circular.c
+ Author      : 123
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+typedef struct
+{
+	int data[MAX_CIRCULAR_SIZE];	// 큐 사이즈 크기 배열
+	int head,tail;				// 큐 전방 / 후방
+}queueType;
+
+
+void init_queue(queueType *c)
+{
+	c->head= c->tail = 8;
+}
+
+bool is_empty(queueType *c)
+{
+	return (c->head == c->tail);
+
+}
+
+//큐가 차있는지 확인
+int is_full(queueType *c)
+{
+	return (c->tail == ((c->tail+1) % MAX_CIRCULAR_SIZE-1);
+}
+
+void enqueue(queueType *c, int data)
+{
+	if(is_full(q))
+		{
+		printf("queue is full\n\r");
+		}
+	else
+	{
+		q->data[++(q->tail)] = data;
+	}
+
+}
+
+
+//큐 확인 후 삭제 연산
+
+int dequeue(queueType *c)
+{
+	if (is_empty(q))
+	{
+		printf("queue is full\n\r");
+		exit(1); //프로그램 종료 함수
+	}
+	int data = q->data[(q->head)];
+	return data;
+}
+
+
+void print_queue(queueType *c)
+{
+	if(is_empty(q))
+	{
+		printf("Empty queue\n\r");
+	}
+	else
+	{
+		printf("queue:");
+		for(int i=0; i< MAX_QUEUE_SIZE; i++)
+		{
+			if(i <= q-> head || i > q->tail)
+		{
+				printf(" |");
+		}
+		else
+		{
+	    printf("%d|", q->data[i]);
+		}
+	} printf("\n");
+}
+}
+
+int main(void)
+{
+	queueType queue;
+
+	int item = 0;
+	init_queue(&queue);
+
+	enqueue(&queue,3);
+	print_queue(&queue);
+
+	enqueue(&queue,4);
+	print_queue(&queue);
+
+	enqueue(&queue,5);
+	print_queue(&queue);
+
+	item = dequeue(&queue);
+	print_queue(&queue);
+
+	enqueue(&queue, 6);
+	print_queue(&queue);
+
+	item=dequeue(&queue);
+	print_queue(&queue);
+
+
+	return 0;
+}
+

@@ -1,0 +1,42 @@
+/*
+ * ap.c
+ *
+ *  Created on: Oct 20, 2025
+ *      Author: user21
+ */
+
+
+#include "ap.h"
+
+
+
+
+void apInit()
+{
+
+
+}
+
+void apMain()
+{
+	// MOTOR1과 MOTOR2의 핀이 정상인지 LED TOGGLE로 테스트합니다.
+	//toggletest(); // 현재 정상동작하지 않으므로, 사용하지 말것
+
+	//MOTOR1의 동작 테스트
+	//Button_All_Process(button_state,button_on);
+
+
+	//UP();
+	//DOWN();
+	//UPDOWNSTOP();
+	//MOTOR1TEST();
+
+	// MOTOR2의 동작 테스트
+	//OPEN();
+	//CLOSE();
+	//LEFTRIGHTSTOP();
+	//MOTOR2TEST();
+
+
+
+}

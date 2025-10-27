@@ -1,0 +1,37 @@
+#include "stepper.h"
+
+void stepMotor(uint8_t step)
+{
+    HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, HALF_STEP_SEQ[step][0]);
+    HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, HALF_STEP_SEQ[step][1]);
+    HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, HALF_STEP_SEQ[step][2]);
+    HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, HALF_STEP_SEQ[step][3]);
+}
+
+void rotateSteps(uint16_t steps, uint8_t direction)
+{
+    for(uint16_t i = 0; i < steps; i++)
+    {
+        uint8_t step;
+        // 회전 방향
+        if(direction == DIR_CW)                // CW
+        {
+            step = i % 8;
+        }
+        else if (direction == DIR_CCW)                               // CCW
+        {
+            step = 7 - (i % 8);
+        }
+        stepMotor(step);
+
+        HAL_Delay(5);                        // 각 step 사이 지연
+    }
+}
+
+void rotateDegrees(uint16_t degrees, uint8_t direction)
+{
+    // 각도 계산 ??? : 기어 4096번 회전해야 모터 1회전.
+    uint16_t steps = (uint16_t)((uint32_t)(degrees * STEPS_PER_REVOLUTION) / 360);
+
+    rotateSteps(steps, direction);
+}

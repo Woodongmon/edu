@@ -1,0 +1,4 @@
+../Core/Src/controller.c:17:6:UP	1
+../Core/Src/controller.c:22:6:DOWN	1
+../Core/Src/controller.c:27:6:STOP	1
+../Core/Src/controller.c:33:6:MOTORTEST	1

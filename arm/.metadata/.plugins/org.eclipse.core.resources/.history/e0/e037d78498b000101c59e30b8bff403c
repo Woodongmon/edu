@@ -1,0 +1,106 @@
+/*
+ ============================================================================
+ Name        : test_queue.c
+ Author      : 123
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <stdbool.h>
+
+#define MAX_QUEUE_SIZE	5
+
+typedef struct
+{
+	int data[MAX_QUEUE_SIZE];	// 큐 사이즈 크기 배열
+	int front,rear;				// 큐 전방 / 후방
+}queueType;
+
+void init_queue(queueType *q)
+{
+	q->front= q->rear-1;	//배열 인덱스가 0이므로 queue가 비어있다면, 둘다 -1
+}
+
+//스텍이 비어있는지 확인
+bool is_empty(queueType *s)
+{
+	return (q-front == q->rear);
+
+}
+
+//스택이 꽉 차있는지 확인
+int is_full(queueType *s)
+{
+	return (s->top == MAX_queue_SIZE);
+}
+
+void push(queueType *s, int data)
+{
+	if(is_full(s))
+		{
+		printf("queue is full\n\r");
+		}
+	else
+	{
+		s->data[++(s->top)] = data;
+	}
+
+}
+
+
+//스텍 확인 후 삭제 연산
+
+int pop(queueType *s)
+{
+	if (is_empty(s))
+	{
+		printf("queue is full\n\r");
+		exit(1); //프로그램 종료 함수
+	}
+	else
+	{
+		int data = s->data[(s->top)--];
+		return data;
+	}
+}
+
+
+
+void print_queue(queueType *s)
+{
+	if(is_empty(s))
+	{
+		printf("Empty queue\n\r");
+	}
+	else
+	{
+		printf("queue:");
+		for(int i=0; i< s->top; i++)
+		{
+			printf("%d|",s->data[i]);
+		}
+	    printf("%d\n", s->data[s->top]);
+
+	}
+}
+
+int main(void)
+{
+	queueType queue;
+
+	init_queue(&queue);
+
+	push(&queue,7);
+	print_queue(&queue);
+
+	push(&queue,8);
+	print_queue(&queue);
+
+	return 0;
+}
+
