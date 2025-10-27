@@ -1,0 +1,13 @@
+/*
+ * dht11.h
+ *
+ *  Created on: Oct 27, 2025
+ *      Author: user21
+ */
+
+#ifndef INC_DHT11_H_
+#define INC_DHT11_H_
+
+
+
+#endif /* INC_DHT11_H_ */

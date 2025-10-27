@@ -1,0 +1,26 @@
+/*
+ * dht11.c
+ *
+ *  Created on: Oct 27, 2025
+ *      Author: user21
+ */
+
+
+#include "dht11.h"
+
+void dht11Init(DHT11 *dht, GPIO_TypeDef *PORT, uint16_t pin)
+{
+
+}
+
+
+void dht11GpioMode(DHT11, *dht, uint8_t mode)
+{
+
+}
+
+
+uint8_t dht11Read(DHT11 *dht)
+{
+
+}

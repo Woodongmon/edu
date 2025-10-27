@@ -1,0 +1,122 @@
+/*
+ * dht11.c
+ *
+ *  Created on: Oct 27, 2025
+ *      Author: user21
+ */
+
+
+#include "dht11.h"
+
+
+//DHT 초기화
+void dht11Init(DHT11 *dht, GPIO_TypeDef *PORT, uint16_t pin)
+{
+	//구조체의 포트와 핀번호 설정
+	dht->port = port;
+	dht->pin = pin;
+}
+
+
+void dht11GpioMode(DHT11, *dht, uint8_t mode)
+{
+	GPIO_InitTypeDef GPIO_InitStruct={0};	//GPIOC에 대한 구조체 선언 및 초기화
+
+
+	if(mode == OUTPUT)	//출력 모드 설정
+	{
+		  GPIO_InitStruct.Pin = dht->pin;				//pin번호를 위에서 지정한 구조체 멤버(dht->pin)로 변경
+		  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+		  GPIO_InitStruct.Pull = GPIO_NOPULL;
+		  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+		  HAL_GPIO_Init(dht->port, &GPIO_InitStruct);	//포트를 위에서 지정한 구조체 멤버(dht->port)로 변경
+	}
+	else if(mode == INPUT) //입력 모드 설정
+	{
+		  GPIO_InitStruct.Pin = dht->pin;
+		  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+		  GPIO_InitStruct.Pull = GPIO_SPEED_FREQ_VERY_HIGH;	//입력이 너무 빠를 경우를 대비
+		  HAL_GPIO_Init(dht->port, &GPIO_InitStruct);
+	}
+
+}
+
+// dht11 데이터 읽기
+uint8_t dht11Read(DHT11 *dht)
+{
+	bool ret = true;
+	uint16_t timeTick=0;
+	uint8_t	puㅣse[40]=0;
+
+	//온습도 변수
+	uint8_t humValue1 = 0,
+			humValue2 = 0;
+
+	uint8_t tempValue1 = 0,
+			tempValuue2=0;
+
+	uint8_t parityValue = 0;
+
+	HAL_TIM_Base_Start(&htim11);
+
+	//통신신호 전송
+	dht11GpioMode(dht, OUTPUT); //출력 설정
+	HAL_GPIO_WritePin(dht->port, dht->pin, 0);
+	HAL_Delay(20);
+	HAL_GPIO_WritePin(dht->port, dht->pin, 1);
+	delay_us(30);
+
+	dht11GpioMode(dht, INPUT);	//입력 설정
+
+
+	//DHT응답신호 대기
+	__HAL_TIM_SET_COUNTER(&htim11,0); //카운터 초기화
+	while(HAL_GPIO_ReadPin(dht->port,dht->pin)==GPIO_PIN_RESET) //low신호대기
+	{
+		if(__HAL_TIM_SET_COUNTER(&htim11)>100)
+		{
+			printf("low signal timeout\r\n");
+			break;
+		}
+	}
+	__HAL_TIM_SET_COUNTER(&htim11,0);
+	while(HAL_GPIO_ReadPin(dht->port,dht->pin)==GPIO_PIN_SET) //low신호대기
+	{
+		if(__HAL_TIM_SET_COUNTER(&htim11)>100)
+		{
+			printf("high signal timeout\r\n");
+			break;
+		}
+	}
+
+	//데이터 수신
+	for(uint8_t i =0; i<40; i++) //40bit 루프
+	{
+		while(HAL_GPIO_ReadPin(dht->port, dht->pin)==GPIO_PIN_RESET); //50us동안 대기
+		__HAL_TIM_SET_COUNTER(&htim11,0);
+
+		while(HAL_GPIO_ReadPin(dht->port, dht->pin)==GPIO_PIN_SET);
+		timeTick = __HAL_TIM_SET_COUNTER(&htim11);	//high signal 카운터 측정
+
+		//신호 길이를 구분 0,1
+		if(timeTick>20 && timeTick <50)
+		{
+			pulse[i]=0;
+		}
+		else if(timeTick>65 && timeTick<85)
+		{
+			pulse[i]=1;
+		}
+
+	}
+	HAL_TIM_Base_Stop(&htim11);
+
+	//온습도 데이터 처리
+	for(uint8t i=0; i<8; i++)
+	{
+		humValue1 = (humValue1<<) + pulse[i]; //습도 상위 8비트
+	}
+
+
+	return ret;
+}
