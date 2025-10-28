@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="searchhistory">
+		<item value="set"/>
+		<item value="int _write"/>
+		<item value="int_write"/>
+		<item value="circularType"/>
+		<item value="queue"/>
+		<item value="*q"/>
+		<item value="rear"/>
+		<item value="head"/>
+		<item value="read"/>
+		<item value="front"/>
+		<item value="item"/>
+		<item value="*s"/>
+		<item value="스텍"/>
+		<item value="스택"/>
+		<item value="stack"/>
+	</list>
+	<list key="replacehistory">
+		<item value="circular"/>
+		<item value="*c"/>
+		<item value="tail"/>
+		<item value="head"/>
+		<item value="*q"/>
+		<item value="큐"/>
+		<item value="queue"/>
+	</list>
+</section>
