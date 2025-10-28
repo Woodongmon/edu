@@ -1,0 +1,29 @@
+/*
+ * ap.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+
+#include "ap.h"
+
+void APInit()
+{
+
+}
+
+void APMain()
+{
+
+	void MOTOR_Init();
+
+	void MOTORA_CW();
+
+	void MOTORA_CCW();
+
+	void MOTORB_CW();
+
+	void MOTORB_CCW();
+
+}

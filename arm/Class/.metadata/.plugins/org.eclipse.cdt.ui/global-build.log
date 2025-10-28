@@ -1,786 +1,149 @@
-09:51:14 **** Build of configuration Debug for project 13_RTC ****
+20:09:33 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
-arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/rtc.d" -MT"Core/Src/rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rtc.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-../Core/Src/main.c: In function 'main':
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
-../Core/Src/main.c:110:27: error: incompatible type for argument 1 of 'HAL_RTC_GetTime'
-  110 |           HAL_RTC_GetTime(hrtc,&rtcTime,RTC_FORMAT_BCD);
-      |                           ^~~~
-      |                           |
-      |                           RTC_HandleTypeDef
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:391,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:714:54: note: expected 'RTC_HandleTypeDef *' but argument is of type 'RTC_HandleTypeDef'
-  714 | HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
-      |                                   ~~~~~~~~~~~~~~~~~~~^~~~
-../Core/Src/main.c:111:27: error: incompatible type for argument 1 of 'HAL_RTC_GetTime'
-  111 |           HAL_RTC_GetTime(hrtc,&rtcDate,RTC_FORMAT_BCD);
-      |                           ^~~~
-      |                           |
-      |                           RTC_HandleTypeDef
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:714:54: note: expected 'RTC_HandleTypeDef *' but argument is of type 'RTC_HandleTypeDef'
-  714 | HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
-      |                                   ~~~~~~~~~~~~~~~~~~~^~~~
-../Core/Src/main.c:111:32: warning: passing argument 2 of 'HAL_RTC_GetTime' from incompatible pointer type [-Wincompatible-pointer-types]
-  111 |           HAL_RTC_GetTime(hrtc,&rtcDate,RTC_FORMAT_BCD);
-      |                                ^~~~~~~~
-      |                                |
-      |                                RTC_DateTypeDef *
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:714:77: note: expected 'RTC_TimeTypeDef *' but argument is of type 'RTC_DateTypeDef *'
-  714 | HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
-      |                                                            ~~~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:113:25: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]
-  113 |           sprintf(temp, "\r\n20%02x-%02x-%-02x %02x:%02x:%02x",
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:117:11: warning: implicit declaration of function 'HAL_UART_Transmit' [-Wimplicit-function-declaration]
-  117 |           HAL_UART_Transmit(&huart2, (uint8_t *)temp, strlen(temp), 10);
-      |           ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:117:30: error: 'huart2' undeclared (first use in this function)
-  117 |           HAL_UART_Transmit(&huart2, (uint8_t *)temp, strlen(temp), 10);
-      |                              ^~~~~~
-../Core/Src/main.c:117:30: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-09:51:54 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:111:33: warning: passing argument 2 of 'HAL_RTC_GetTime' from incompatible pointer type [-Wincompatible-pointer-types]
-  111 |           HAL_RTC_GetTime(&hrtc,&rtcDate,RTC_FORMAT_BCD);
-      |                                 ^~~~~~~~
-      |                                 |
-      |                                 RTC_DateTypeDef *
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:391,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:714:77: note: expected 'RTC_TimeTypeDef *' but argument is of type 'RTC_DateTypeDef *'
-  714 | HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
-      |                                                            ~~~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:113:25: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]
-  113 |           sprintf(temp, "\r\n20%02x-%02x-%-02x %02x:%02x:%02x",
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:117:11: warning: implicit declaration of function 'HAL_UART_Transmit' [-Wimplicit-function-declaration]
-  117 |           HAL_UART_Transmit(&huart2, (uint8_t *)temp, strlen(temp), 10);
-      |           ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:117:30: error: 'huart2' undeclared (first use in this function)
-  117 |           HAL_UART_Transmit(&huart2, (uint8_t *)temp, strlen(temp), 10);
-      |                              ^~~~~~
-../Core/Src/main.c:117:30: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-09:52:24 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
-arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/rtc.d" -MT"Core/Src/rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rtc.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:113:33: warning: passing argument 2 of 'HAL_RTC_GetTime' from incompatible pointer type [-Wincompatible-pointer-types]
-  113 |           HAL_RTC_GetTime(&hrtc,&rtcDate,RTC_FORMAT_BCD);
-      |                                 ^~~~~~~~
-      |                                 |
-      |                                 RTC_DateTypeDef *
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:391,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:714:77: note: expected 'RTC_TimeTypeDef *' but argument is of type 'RTC_DateTypeDef *'
-  714 | HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
-      |                                                            ~~~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:115:25: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]
-  115 |           sprintf(temp, "\r\n20%02x-%02x-%-02x %02x:%02x:%02x",
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
    text	   data	    bss	    dec	    hex	filename
-  13180	     92	   2084	  15356	   3bfc	13_RTC.elf
+   6080	     12	   1572	   7664	   1df0	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-Finished building: 13_RTC.list
- 
-09:53:08 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:09:35 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:115:25: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]
-  115 |           sprintf(temp, "\r\n20%02x-%02x-%-02x %02x:%02x:%02x",
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
    text	   data	    bss	    dec	    hex	filename
-  13336	     92	   2084	  15512	   3c98	13_RTC.elf
+   6080	     12	   1572	   7664	   1df0	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-Finished building: 13_RTC.list
- 
-09:53:24 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:11:46 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
+arm-none-eabi-gcc -o "98_RCcar_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/98_RCcar_test/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="98_RCcar_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 98_RCcar_test.elf
  
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
+arm-none-eabi-objdump -h -S 98_RCcar_test.elf  > "98_RCcar_test.list"
    text	   data	    bss	    dec	    hex	filename
-  13336	     92	   2084	  15512	   3c98	13_RTC.elf
+   6028	     12	   1572	   7612	   1dbc	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-Finished building: 13_RTC.list
+Finished building: 98_RCcar_test.list
  
-09:53:39 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:11:48 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
+arm-none-eabi-size  98_RCcar_test.elf 
    text	   data	    bss	    dec	    hex	filename
-  13336	     92	   2084	  15512	   3c98	13_RTC.elf
+   6028	     12	   1572	   7612	   1dbc	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-10:19:55 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:14:04 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:130:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  130 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:130:44: error: expected ';' before 'buff'
-  130 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  131 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c:133:59: error: expected ';' before '}' token
-  133 |                   HAL_UART_Receive_IT(&huart2, &rxData, 1)
-      |                                                           ^
-      |                                                           ;
-  134 |           }
-      |           ~                                                
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:141:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  141 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:26:39 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:125:60: warning: suggest parentheses around '-' inside '<<' [-Wparentheses]
-  125 |                                   rtcTime.Hours = ((*ptr+7 - '0' <<4)+(*ptr+8)-'0'));
-      |                                                     ~~~~~~~^~~~~
-../Core/Src/main.c:125:84: error: expected ';' before ')' token
-  125 |                                   rtcTime.Hours = ((*ptr+7 - '0' <<4)+(*ptr+8)-'0'));
-      |                                                                                    ^
-      |                                                                                    ;
-../Core/Src/main.c:125:84: error: expected statement before ')' token
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c:134:59: error: expected ';' before '}' token
-  134 |                   HAL_UART_Receive_IT(&huart2, &rxData, 1)
-      |                                                           ^
-      |                                                           ;
-  135 |           }
-      |           ~                                                
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:142:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  142 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:27:14 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:125:86: error: expected ';' before ')' token
-  125 |                                   rtcTime.Hours = (*((ptr+7) - '0') <<4)+(*ptr+8)-'0'));
-      |                                                                                      ^
-      |                                                                                      ;
-../Core/Src/main.c:125:86: error: expected statement before ')' token
-../Core/Src/main.c:125:87: error: expected statement before ')' token
-  125 |                                   rtcTime.Hours = (*((ptr+7) - '0') <<4)+(*ptr+8)-'0'));
-      |                                                                                       ^
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c:134:59: error: expected ';' before '}' token
-  134 |                   HAL_UART_Receive_IT(&huart2, &rxData, 1)
-      |                                                           ^
-      |                                                           ;
-  135 |           }
-      |           ~                                                
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:142:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  142 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:27:28 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:125:86: error: expected ';' before ')' token
-  125 |                                   rtcTime.Hours = ((*(ptr+7) - '0') <<4)+(*ptr+8)-'0'));
-      |                                                                                      ^
-      |                                                                                      ;
-../Core/Src/main.c:125:86: error: expected statement before ')' token
-../Core/Src/main.c:125:87: error: expected statement before ')' token
-  125 |                                   rtcTime.Hours = ((*(ptr+7) - '0') <<4)+(*ptr+8)-'0'));
-      |                                                                                       ^
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c:134:59: error: expected ';' before '}' token
-  134 |                   HAL_UART_Receive_IT(&huart2, &rxData, 1)
-      |                                                           ^
-      |                                                           ;
-  135 |           }
-      |           ~                                                
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:142:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  142 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:27:48 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:125:89: error: expected ';' before ')' token
-  125 |                                   rtcTime.Hours = ((*(ptr+7) - '0') << 4)+(*(ptr+8)-'0'));
-      |                                                                                         ^
-      |                                                                                         ;
-../Core/Src/main.c:125:89: error: expected statement before ')' token
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c:134:59: error: expected ';' before '}' token
-  134 |                   HAL_UART_Receive_IT(&huart2, &rxData, 1)
-      |                                                           ^
-      |                                                           ;
-  135 |           }
-      |           ~                                                
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:142:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  142 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:28:16 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c:134:59: error: expected ';' before '}' token
-  134 |                   HAL_UART_Receive_IT(&huart2, &rxData, 1)
-      |                                                           ^
-      |                                                           ;
-  135 |           }
-      |           ~                                                
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:142:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  142 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:28:33 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:142:3: error: too many arguments to function 'HAL_UART_Receive_IT'
-  142 |   HAL_UART_Receive_IT(&huart2, &rxData, rxData, 1);
-      |   ^~~~~~~~~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:19: note: declared here
-  748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
-      |                   ^~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:28:45 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c:131:27: warning: implicit declaration of function 'iff' [-Wimplicit-function-declaration]
-  131 |                           iff(buffIndex<30)
-      |                           ^~~
-../Core/Src/main.c:131:44: error: expected ';' before 'buff'
-  131 |                           iff(buffIndex<30)
-      |                                            ^
-      |                                            ;
-  132 |                                           buff[buffIndex++] = rxData;   //버퍼에 데이터 추가
-      |                                           ~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:29:02 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:119:27: error: called object 'buff' is not a function or function pointer
-  119 |                           buff(buffIndex) = 0;  // null문자를 추가하여 문자열로 만듦
-      |                           ^~~~
-../Core/Src/main.c:62:9: note: declared here
-   62 | uint8_t buff[30];
-      |         ^~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
-10:31:48 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
+arm-none-eabi-gcc -o "98_RCcar_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/98_RCcar_test/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="98_RCcar_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 98_RCcar_test.elf
  
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
+arm-none-eabi-objdump -h -S 98_RCcar_test.elf  > "98_RCcar_test.list"
    text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
+   6028	     12	   1572	   7612	   1dbc	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-Finished building: 13_RTC.list
+Finished building: 98_RCcar_test.list
  
-10:34:34 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:14:06 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6028	     12	   1572	   7612	   1dbc	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:15:30 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6028	     12	   1572	   7612	   1dbc	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:19:00 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6028	     12	   1572	   7612	   1dbc	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:23:40 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ap.d" -MT"Core/Src/ap.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ap.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/motor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/motor.d" -MT"Core/Src/motor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/motor.o"
+arm-none-eabi-gcc -o "98_RCcar_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/98_RCcar_test/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="98_RCcar_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 98_RCcar_test.elf
+ 
+arm-none-eabi-size  98_RCcar_test.elf 
+arm-none-eabi-objdump -h -S 98_RCcar_test.elf  > "98_RCcar_test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1572	   7640	   1dd8	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: 98_RCcar_test.list
+ 
+20:23:42 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1572	   7640	   1dd8	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:23:45 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1572	   7640	   1dd8	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:24:30 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1572	   7640	   1dd8	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:25:35 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1572	   7640	   1dd8	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:25:42 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1572	   7640	   1dd8	98_RCcar_test.elf
+Finished building: default.size.stdout
+ 
+20:27:19 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
+arm-none-eabi-gcc -o "98_RCcar_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/98_RCcar_test/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="98_RCcar_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 98_RCcar_test.elf
  
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
+arm-none-eabi-objdump -h -S 98_RCcar_test.elf  > "98_RCcar_test.list"
    text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
+   6120	     12	   1572	   7704	   1e18	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-Finished building: 13_RTC.list
+Finished building: 98_RCcar_test.list
  
-10:34:37 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:27:29 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
    text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
+   6120	     12	   1572	   7704	   1e18	98_RCcar_test.elf
 Finished building: default.size.stdout
  
-Finished building: 13_RTC.list
- 
-10:43:38 **** Incremental Build of configuration Debug for project 13_RTC ****
+20:27:31 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
+arm-none-eabi-size  98_RCcar_test.elf 
    text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_RTC.list
- 
-10:44:31 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
-Finished building: default.size.stdout
- 
-10:44:56 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
-Finished building: default.size.stdout
- 
-10:46:38 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:113:8: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
-  113 |   void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
-   text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_RTC.list
- 
-10:46:46 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13544	     92	   2084	  15720	   3d68	13_RTC.elf
-Finished building: default.size.stdout
- 
-10:49:53 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_RTC.list
- 
-10:49:55 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-10:56:04 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:213:58: warning: passing argument 2 of 'HAL_RTC_SetDate' from incompatible pointer type [-Wincompatible-pointer-types]
-  213 |                                   HAL_RTC_SetDate(&hrtc, &rtcTime, RTC_FORMAT_BCD);
-      |                                                          ^~~~~~~~
-      |                                                          |
-      |                                                          RTC_TimeTypeDef *
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:391,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:715:77: note: expected 'RTC_DateTypeDef *' but argument is of type 'RTC_TimeTypeDef *'
-  715 | HAL_StatusTypeDef HAL_RTC_SetDate(RTC_HandleTypeDef *hrtc, RTC_DateTypeDef *sDate, uint32_t Format);
-      |                                                            ~~~~~~~~~~~~~~~~~^~~~~
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_RTC.list
- 
-10:56:29 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-11:02:12 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_RTC.list
- 
-11:02:14 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-11:02:44 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-11:02:47 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  13556	     92	   2084	  15732	   3d74	13_RTC.elf
-Finished building: default.size.stdout
- 
-11:04:11 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
-arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/rtc.d" -MT"Core/Src/rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rtc.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
-arm-none-eabi-gcc -o "13_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/user21/workspace_dhw/arm/Class/13_RTC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_RTC.elf
- 
-arm-none-eabi-size  13_RTC.elf 
-arm-none-eabi-objdump -h -S 13_RTC.elf  > "13_RTC.list"
-   text	   data	    bss	    dec	    hex	filename
-  16452	     92	   2116	  18660	   48e4	13_RTC.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_RTC.list
- 
-11:04:13 **** Incremental Build of configuration Debug for project 13_RTC ****
-make -j16 all 
-arm-none-eabi-size  13_RTC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  16452	     92	   2116	  18660	   48e4	13_RTC.elf
+   6120	     12	   1572	   7704	   1e18	98_RCcar_test.elf
 Finished building: default.size.stdout
  

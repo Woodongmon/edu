@@ -1,0 +1,72 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+#include "motor.h"
+
+
+void motorInit()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 0)
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 0)
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 0)
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 0)
+}
+
+// Rotate the Motor A clockwise
+void LEFTCW()
+{
+
+}
+
+
+void left11()
+{
+
+
+
+}
+
+
+// Motor A
+digitalWrite(IN1, HIGH);
+digitalWrite(IN2, HIGH);
+delay(500);
+// Rotate the Motor B clockwise
+digitalWrite(IN3, HIGH);
+digitalWrite(IN4, LOW);
+delay(2000);
+// Motor B
+digitalWrite(IN3, HIGH);
+digitalWrite(IN4, HIGH);
+delay(500);
+// Rotates the Motor A counter-clockwise
+digitalWrite(IN1, LOW);
+digitalWrite(IN2, HIGH);
+delay(2000);
+// Motor A
+digitalWrite(IN1, HIGH);
+digitalWrite(IN2, HIGH);
+delay(500);
+// Rotates the Motor B counter-clockwise
+digitalWrite(IN3, LOW);
+digitalWrite(IN4, HIGH);
+delay(2000);
+// Motor B
+digitalWrite(IN3, HIGH);
+digitalWrite(IN4, HIGH);
+delay(500);
+
+
+void right10()
+{
+
+}
+
+void right11()
+{
+
+}
