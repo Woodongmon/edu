@@ -1,0 +1,31 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+#include "gpio.h"
+#include "motor.h"
+
+void left10()
+{
+	gpio_writepin
+
+
+}
+
+void left11()
+{
+
+}
+
+void right10()
+{
+
+}
+
+void right11()
+{
+
+}
