@@ -1,0 +1,5 @@
+../Core/Src/motor.c:10:6:MOTOR_Init	8	static
+../Core/Src/motor.c:18:6:MOTORA_CW	8	static
+../Core/Src/motor.c:26:6:MOTORA_CCW	8	static
+../Core/Src/motor.c:34:6:MOTORB_CW	8	static
+../Core/Src/motor.c:43:6:MOTORB_CCW	8	static

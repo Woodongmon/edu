@@ -1,10 +1,10 @@
-20:27:31 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
+15:19:21 **** Incremental Build of configuration Debug for project 98_RCcar_test ****
 make -j16 all 
 arm-none-eabi-size  98_RCcar_test.elf 
    text	   data	    bss	    dec	    hex	filename
-   6120	     12	   1572	   7704	   1e18	98_RCcar_test.elf
+   6108	     12	   1572	   7692	   1e0c	98_RCcar_test.elf
 Finished building: default.size.stdout
  
 
-20:27:31 Build Finished. 0 errors, 0 warnings. (took 144ms)
+15:19:21 Build Finished. 0 errors, 0 warnings. (took 145ms)
 
