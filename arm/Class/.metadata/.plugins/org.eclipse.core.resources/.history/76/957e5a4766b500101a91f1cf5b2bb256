@@ -1,0 +1,3 @@
+../Core/Src/ap.c:11:6:APInit	8	static
+../Core/Src/ap.c:16:6:APMain	8	static
+../Core/Src/ap.c:25:6:ControlAP	16	static

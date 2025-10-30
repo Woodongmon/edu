@@ -1,0 +1,58 @@
+/*
+ * ap.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+
+#include "ap.h"
+
+void APInit()
+{
+	MOTOR_Init();
+}
+
+void APMain()
+{
+
+//	OFF();
+
+
+	FOWARD();
+
+	MAX();
+	HAL_Delay(1000);
+	OFF();
+	HAL_Delay(1000);
+
+	LEFT();
+	HAL_Delay(1000);
+	OFF();
+	HAL_Delay(1000);
+
+	RIGHT();
+	HAL_Delay(1000);
+	OFF();
+	HAL_Delay(1000);
+
+	BACKWARD();
+
+	MAX();
+	HAL_Delay(1000);
+	OFF();
+	HAL_Delay(1000);
+
+	LEFT();
+	HAL_Delay(1000);
+	OFF();
+	HAL_Delay(1000);
+
+	RIGHT();
+	HAL_Delay(1000);
+	OFF();
+	HAL_Delay(1000);
+
+
+
+}

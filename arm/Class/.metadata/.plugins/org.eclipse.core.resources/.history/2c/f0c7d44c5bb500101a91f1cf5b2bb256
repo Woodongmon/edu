@@ -1,0 +1,24 @@
+/*
+ * ap.h
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+#ifndef INC_AP_H_
+#define INC_AP_H_
+
+
+#include "main.h"
+#include "motor.h"
+#include "tim.h"
+
+extern volatile uint8_t g_cmd;
+
+
+void APInit();
+
+void APMain();
+void ControlAP();
+
+#endif /* INC_AP_H_ */
