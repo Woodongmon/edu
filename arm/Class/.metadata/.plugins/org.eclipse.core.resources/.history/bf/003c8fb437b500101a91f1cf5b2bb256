@@ -1,0 +1,28 @@
+/*
+ * ap.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+
+#include "ap.h"
+
+void APInit()
+{
+	MOTOR_Init();
+}
+
+void APMain()
+{
+
+	MOTOR_Init();
+	START();
+	FOWARD();
+	BACKWARD();
+	START();
+	OFF();
+	EFT();
+	RIGHT();
+
+}

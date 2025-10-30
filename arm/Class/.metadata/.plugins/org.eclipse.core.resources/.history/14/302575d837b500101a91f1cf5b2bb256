@@ -1,0 +1,64 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+#include "motor.h"
+
+
+
+void MOTOR_Init()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 0);
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 0);
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 0);
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 0);
+}
+
+void FOWARD()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 1);
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 0);
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 1);
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 0);
+}
+
+void BACKWARD()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 0);
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 1);
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 0);
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 1);
+}
+
+
+//EN Pin - on/off,direction control
+
+//void GEAR();
+
+void START()
+{
+	HAL_GPIO_WritePin(ENA_GPIO_PORT, ENA_PIN, 1);
+	HAL_GPIO_WritePin(ENB_GPIO_PORT, ENA_PIN, 1);
+}
+
+void OFF()
+{
+	HAL_GPIO_WritePin(ENA_GPIO_PORT, ENA_PIN, 0);
+	HAL_GPIO_WritePin(ENB_GPIO_PORT, ENA_PIN, 0);
+}
+
+void LEFT()
+{
+	HAL_GPIO_WritePin(ENA_GPIO_PORT, ENA_PIN, 0);
+	HAL_GPIO_WritePin(ENB_GPIO_PORT, ENA_PIN, 1);
+}
+
+void RIGHT()
+{
+	HAL_GPIO_WritePin(ENA_GPIO_PORT, ENA_PIN, 0);
+	HAL_GPIO_WritePin(ENB_GPIO_PORT, ENA_PIN, 1);
+}
+

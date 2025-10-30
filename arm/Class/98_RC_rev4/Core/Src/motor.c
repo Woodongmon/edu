@@ -1,0 +1,148 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+#include "motor.h"
+
+// ENA/ENB PWM값을 %로 변환
+static void MOTOR_SetDuty(uint8_t ENA_dutyratio, uint8_t ENB_dutyratio)
+{
+    uint32_t arr = __HAL_TIM_GET_AUTORELOAD(&htim2);
+
+    if (ENA_dutyratio > 100) ENA_dutyratio = 100;
+    if (ENB_dutyratio > 100) ENB_dutyratio = 100;
+
+    uint32_t ccr_ena = (arr * ENA_dutyratio) / 100;
+    uint32_t ccr_enb = (arr * ENB_dutyratio) / 100;
+
+    __HAL_TIM_SET_COMPARE(&ENA_TIMER, ENA_CHANNEL, ccr_ena);
+    __HAL_TIM_SET_COMPARE(&ENB_TIMER, ENB_CHANNEL, ccr_enb);
+}
+
+void MOTOR_Init()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 0);
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 0);
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 0);
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 0);
+
+	MX_TIM2_Init();  // pwm사용을 위한 초기 init
+    HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);  // ENA (PA0)
+    HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);  // ENB (PA1)
+
+    // 초기에는 멈춘 상태
+    MOTOR_SetDuty(0, 0);
+}
+
+//In1~In4 만을 사용하여, 모든 motor를 켜는 동작만을 수행
+
+void FOWARD()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 1);
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 0);
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 1);
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 0);
+}
+
+void BACKWARD()
+{
+	HAL_GPIO_WritePin(IN1_GPIO_PORT, IN1_PIN, 0);
+	HAL_GPIO_WritePin(IN2_GPIO_PORT, IN2_PIN, 1);
+	HAL_GPIO_WritePin(IN3_GPIO_PORT, IN3_PIN, 0);
+	HAL_GPIO_WritePin(IN4_GPIO_PORT, IN4_PIN, 1);
+}
+
+
+
+// EN Pin 에 입력하는 duty ratio에 따라
+// STOP/LV1~LV3 및,
+// direction control 수행
+
+void STOP()
+{
+	MOTOR_SetDuty(0, 0);
+}
+
+void LV1()
+{
+	MOTOR_SetDuty(65, 65);
+}
+
+void LV2()
+{
+	MOTOR_SetDuty(80, 80);
+}
+
+void LV3()
+{
+	MOTOR_SetDuty(100, 100);
+}
+
+void LEFT()
+{
+    MOTOR_SetDuty(0, 60);
+}
+
+void RIGHT()
+{
+    MOTOR_SetDuty(60, 0);
+}
+
+void Motortest()
+{
+
+	//전진 동작
+
+	FOWARD();
+
+	LV1();
+	HAL_Delay(1000);
+	LV2();
+	HAL_Delay(1000);
+	LV3();
+	HAL_Delay(1000);
+	LV1();
+	HAL_Delay(1000);
+
+	HAL_Delay(1000);
+	STOP();
+	HAL_Delay(1000);
+
+	LEFT();
+	HAL_Delay(1000);
+	STOP();
+	HAL_Delay(1000);
+
+	RIGHT();
+	HAL_Delay(1000);
+	STOP();
+	HAL_Delay(1000);
+
+	//후진 동작
+
+	BACKWARD();
+
+	LV1();
+	HAL_Delay(1000);
+	LV2();
+	HAL_Delay(1000);
+	LV3();
+	HAL_Delay(1000);
+	LV1();
+	HAL_Delay(1000);
+
+	LEFT();
+	HAL_Delay(1000);
+	STOP();
+	HAL_Delay(1000);
+
+	RIGHT();
+	HAL_Delay(1000);
+	STOP();
+	HAL_Delay(1000);
+
+
+}

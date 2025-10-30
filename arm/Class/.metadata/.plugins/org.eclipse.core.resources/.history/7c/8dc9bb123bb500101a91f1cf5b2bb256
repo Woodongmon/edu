@@ -1,0 +1,7 @@
+../Core/Src/motor.c:12:6:MOTOR_Init	8	static
+../Core/Src/motor.c:20:6:FOWARD	8	static
+../Core/Src/motor.c:28:6:BACKWARD	8	static
+../Core/Src/motor.c:41:6:MAX	8	static
+../Core/Src/motor.c:47:6:OFF	8	static
+../Core/Src/motor.c:53:6:LEFT	8	static
+../Core/Src/motor.c:59:6:RIGHT	8	static

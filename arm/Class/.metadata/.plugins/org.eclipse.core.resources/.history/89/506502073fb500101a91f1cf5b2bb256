@@ -1,0 +1,66 @@
+/*
+ * ap.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+
+#include "ap.h"
+
+void APInit()
+{
+	MOTOR_Init();
+}
+
+void APMain()
+{
+
+//OFF();
+Motortest();
+
+}
+
+void ControlAP()
+{
+    uint8_t cmd = g_cmd;
+
+    if (cmd == 0)
+        return;     // 명령 없으면 그냥 리턴
+
+    // 한 번 처리했으니 비워주기
+
+
+    switch (cmd)
+    {
+    case 'F':   // Forward
+        FOWARD();
+        MAX();          // 속도 최대 (ENA/ENB ON)
+        break;
+
+    case 'B':   // Backward
+        BACKWARD();
+        MAX();
+        break;
+
+    case 'L':   // Left
+        // 방향은 forward로 두고, 왼쪽만 off해서 회전
+        FOWARD();
+        LEFT();
+        break;
+
+    case 'R':   // Right
+        FOWARD();
+        RIGHT();
+        break;
+
+    case 'S':   // Stop
+        OFF();
+        break;
+
+    default:
+        // 알 수 없는 명령
+        break;
+    }
+    g_cmd = 0;
+}

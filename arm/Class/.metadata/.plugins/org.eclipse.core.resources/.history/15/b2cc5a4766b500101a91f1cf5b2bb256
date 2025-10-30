@@ -1,0 +1,11 @@
+../Core/Src/motor.c:11:13:MOTOR_SetDuty	32	static
+../Core/Src/motor.c:25:6:MOTOR_Init	8	static
+../Core/Src/motor.c:42:6:FOWARD	8	static
+../Core/Src/motor.c:50:6:BACKWARD	8	static
+../Core/Src/motor.c:64:6:STOP	8	static
+../Core/Src/motor.c:69:6:LV1	8	static
+../Core/Src/motor.c:74:6:LV2	8	static
+../Core/Src/motor.c:79:6:LV3	8	static
+../Core/Src/motor.c:84:6:LEFT	8	static
+../Core/Src/motor.c:89:6:RIGHT	8	static
+../Core/Src/motor.c:94:6:Motortest	8	static

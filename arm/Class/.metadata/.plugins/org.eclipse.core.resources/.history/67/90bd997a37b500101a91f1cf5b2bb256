@@ -1,0 +1,31 @@
+/*
+ * ap.c
+ *
+ *  Created on: Oct 28, 2025
+ *      Author: user21
+ */
+
+
+#include "ap.h"
+
+void APInit()
+{
+	void MOTOR_Init();
+}
+
+void APMain()
+{
+
+	MOTORA_CW();
+	HAL_Delay(1000);
+
+	MOTORA_CCW();
+	HAL_Delay(1000);
+
+	MOTORB_CW();
+	HAL_Delay(1000);
+
+	MOTORB_CCW();
+	HAL_Delay(1000);
+
+}

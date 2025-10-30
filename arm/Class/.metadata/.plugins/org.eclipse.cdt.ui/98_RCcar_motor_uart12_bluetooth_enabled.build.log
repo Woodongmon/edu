@@ -1,0 +1,10 @@
+11:38:42 **** Incremental Build of configuration Debug for project 98_RCcar_motor_uart12_bluetooth_enabled ****
+make -j16 all 
+arm-none-eabi-size  98_RCcar_motor_uart12_bluetooth_enabled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11572	     12	   1716	  13300	   33f4	98_RCcar_motor_uart12_bluetooth_enabled.elf
+Finished building: default.size.stdout
+ 
+
+11:38:42 Build Finished. 0 errors, 0 warnings. (took 147ms)
+
